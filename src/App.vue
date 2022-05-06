@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <section class="contain">
+    <section class="contain body">
       <div class="contained">
         <div class="top">
           <h1>Join our community</h1>
@@ -41,16 +41,9 @@
 
 
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
-}
+
 :root {
   --small-font-weight: 400;
   --big-font-weight: 700;
@@ -59,7 +52,7 @@
   --main-background: hsl(204, 43%, 93%);
   --minor-background: hsl(179, 62%, 43%);
 }
-body {
+.body {
   font-family: "Karla", sans-serif;
   font-size: 16px !important;
   background-color: var(--main-background);
