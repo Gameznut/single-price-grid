@@ -41,7 +41,7 @@
 
 
 
-<style scoped>
+<style>
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
 :root {
