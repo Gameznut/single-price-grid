@@ -72,6 +72,7 @@ ul {
   display: grid;
   place-items: center;
   height: 100vh;
+  padding: 0 1rem;
 }
 .contained {
   max-width: 768px;
@@ -145,7 +146,7 @@ ul {
   border-radius: 5px;
   font-size: 16px;
   color: white;
-  box-shadow: 0px 6px 19px 1px rgba(39, 39, 39, 0.514);
+  box-shadow: 0px 3px 19px 1px rgba(39, 39, 39, 0.384);
   padding: 1.3rem;
   background-color: var(--major-color);
   width: 100%;
@@ -167,5 +168,28 @@ ul {
 
 .bottom div:last-child ul li {
   padding: 0 0 0.21rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bottom div:first-child,
+  .top,
+  .bottom div:last-child {
+    padding: 1.5rem;
+  }
+  .top h1 {
+    font-size: 20px;
+  }
+
+  .top h2 {
+    font-size: 18px;
+  }
+  .top p {
+    line-height: 1.5rem;
+    font-size: 14px;
+  }
 }
 </style>
